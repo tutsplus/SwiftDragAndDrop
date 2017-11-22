@@ -107,18 +107,19 @@ extension MasterViewController: UITableViewDragDelegate {
     
     // MARK: - UITableViewDelegate
     
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        
-        guard sourceIndexPath.row != destinationIndexPath.row else { return }
-        
-        let object = self.objects[sourceIndexPath.row]
-        objects.remove(at: sourceIndexPath.row)
-        objects.insert(object, at: destinationIndexPath.row)
-    }
+    //Not needed for Drag and Drop
+//    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+//        return true
+//    }
+//
+//    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+//
+//        guard sourceIndexPath.row != destinationIndexPath.row else { return }
+//
+//        let object = self.objects[sourceIndexPath.row]
+//        objects.remove(at: sourceIndexPath.row)
+//        objects.insert(object, at: destinationIndexPath.row)
+//    }
     
 }
 
