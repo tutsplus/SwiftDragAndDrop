@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Inventory' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Inventory
+pod 'RealmSwift'
+pod 'RealmLoginKit'
+
+pod 'Eureka', '~> 2.0.0-beta.1'
+pod 'ImageRow', '~> 1.0'
+pod 'PermissionScope', :git => 'https://github.com/nickoneill/PermissionScope.git'
+pod 'BarcodeScanner'
+pod 'ImagePicker'
+pod 'BRYXBanner', '~> 0.7.1'
+
+
+
+  target 'InventoryTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'InventoryUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
